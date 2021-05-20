@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="TNM_Ringristmik">
+    <static>true</static>
+    <link name="link">
+    <pose>0 0 -5 1.55 0 0</pose>
+    <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://TNM_Ringristmik/meshes/TNM_Ringristmik.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">	
+        <geometry>
+          <mesh>
+            <uri>model://TNM_Ringristmik/meshes/TNM_Ringristmik.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://TNM_Ringristmik/materials/scripts</uri>
+            <uri>model://TNM_Ringristmik/materials/textures</uri>
+            <name>TNM_Ringristmik</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
